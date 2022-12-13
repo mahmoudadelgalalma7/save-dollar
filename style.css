@@ -1,4 +1,312 @@
+/* Arabic  RTL*/
 
-body {
-    /* display:none */
-}
+    /* Header */
+    .rtl .top-nav {
+        background-color:#6E0007 !important;
+        color:#FFF;}
+    .rtl .main-nav {
+        /*background:linear-gradient(to right,#A81519,#CE7B7D ,#FFF);*/
+        background-color:#FFF;
+        color:#555;
+    }
+    /*.rtl .main-nav .members-area a {color:#FFF !important}*/
+    .rtl .main-nav button.btn.btn-search{color:#FFF}
+    
+    
+    /* Edit H2*/
+    
+    .rtl .section-title h2::before {
+        content: "";
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-color: #6E0007;
+        left: -7px;
+        top: 0;
+        transform: skew(-15deg, 0deg);
+    }
+    
+    .rtl .section-title h2::after {
+        content: "";
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-color: #6E0007;
+        left: -30px;
+        top: 0;
+        transform: skew(-15deg, 0deg);
+    }
+    
+    /* English  LTR*/
+        /* Header */
+    div#accordion1 {display:none}
+    li.nav-item.dropdown.dektop-only{cursor:pointer}
+    .ltr .top-nav {
+        background-color:#6E0007 !important;
+        color:#FFF;
+    } 
+    .ltr .main-nav {
+        /*background:linear-gradient(to left,#A81519,#CE7B7D ,#FFF);*/
+        background-color:#FFF;
+        color:#555;
+    }
+    /*.ltr .main-nav .members-area a {color:#FFF !important}*/
+    .ltr .main-nav button.btn.btn-search{color:#FFF}
+    
+    /*Edit H2*/
+    
+    .ltr .section-title h2::before {
+        content: "";
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-color: #6E0007;
+        right: -7px;
+        top: 0;
+        transform: skew(15deg, 0deg);
+    }
+    
+    .ltr .section-title h2::after {
+        content: "";
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-color: #6E0007;
+        right: -30px;
+        top: 0;
+        transform: skew(15deg, 0deg);
+    }
+    /* Main */
+        /* Navigation */
+    #alertNotification {background-color:#636566}
+        /* Body */
+    body {background-color:#FFF}
+    
+        /* Header */
+    .top-nav a.dropdown-item.select-language:hover {color:#CA7072 !important}
+    .top-nav .dropdown-menu.show:hover {background-color:#CA7072 !important}
+    a.dropdown-item.select-country span {color:#000 !important}
+    .main-nav ul.dropdown-menu li:hover {background-color:#BB474A}
+    .main-nav .input-group-append button:hover {background-color:#CA7072}
+    .main-nav i.fas.fa-shopping-basket:hover {color:#CA7072}
+    .main-nav .members-area a:hover {color:#CA7072 !important}
+    #navbar_top {
+        box-shadow: 0px 2px 9px #666;
+    }
+    
+    #sticky-mobile {
+        box-shadow: 0px 2px 9px #666;
+    }
+        /* Banner */
+    .home-slider-item {
+        border:1px solid #6E0007;
+        border-radius:8px;
+    }
+    
+        /* Section */
+    .loadmore a {
+        background-color:#FFF;
+        color:#8b2424;
+        border-color:#CCC;
+    }
+    .loadmore a:hover {
+        background-color:#A81519;
+        color:#FFF;
+    }
+    section h2, section h2 a {
+        color:#6E0007 !important;
+        font-weight:bold;}
+        
+        /* Products */
+    .product-card-wrapper {
+        border:1px solid #CCC;
+        padding:5px;}
+    
+        /* Testomonial */
+    .testimonial-item {
+        background-color:#FFF;
+        border-radius:5px;
+        overflow:hidden;
+        box-shadow: -2px -1px 20px 0px #ccc, 3px 2px 6px #ccc;
+    }
+    .testimonial:after{background-color:#FFF}
+    .testimonial-item::before {
+        content: "";
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background-color: #2858a7;
+        top: 0;
+        background-color:#8b2424;
+    }
+    
+    
+    
+        /* Footer */
+    footer h5:after{top:100%}
+    footer h5 {
+        margin-bottom:20px;
+        font-weight:bold;
+        color:#111 !important
+        ;font-size:25px;}
+    /*.footer-img img:not(:last-child){margin-left:15px !important}*/
+    .footer-img img {margin:8px 13px !important}
+    footer {
+        background-color:#FFF !important;
+        box-shadow: 0px -2px 15px #ccc;
+        margin-top: 40px;
+    }
+    .copyrights {background-color:#636566;}
+    .copyrights p, .copyrights span {
+        font-size:20px;
+        color:#FFF !important;
+        font-weight:normal !important;
+    }
+    
+    /*--------------------------------------------*/
+    
+    
+    /* MoBile */
+    
+    @media (max-width:992px) {
+    /* Arabic */
+        /* Header */
+    .rtl .navbar {
+        /*background:linear-gradient(to right,#A81519,#FFF);*/
+        background-color:#FFF;
+        color:#555;
+        height:155px;}
+    .rtl .navbar form.input-group {border:1px solid #626465;border-left:2px solid #626465}
+    .rtl #sticky-mobile.fixed-top {
+        background-color:#FFF}    
+       
+    /* English */
+        /* Header */
+    .ltr .navbar {
+        /*background:linear-gradient(to left,#A81519,#FFF);*/
+        background-color:#FFF;
+        color:#555;
+        height:155px;}
+    .ltr .navbar form.input-group {border:1px solid #626465;}
+    .ltr #sticky-mobile.fixed-top {
+        background-color:#FFF}
+       
+        
+    /* Main */   
+    .navbar-brand img {width:100px; height:100px}   
+    .navbar .search-group .btn:hover {background-color:#CA7072}
+    .navbar a.btn.btn-demo.cart-toggle-btn:hover {color:#CA7072}    
+    
+    .dropdown-menu li a:hover {background-color:#CA7072 !important}
+    .main-nav .nav-item.dropdown .nav-link {
+        background-color:#6E0007 !important;
+        color:#FFF !important;
+        text-indent: 8px;}
+    .main-nav .nav-item.dropdown .nav-link:hover {color:#CA7072 !important}
+    .navbar-nav .nav-item {margin-right:0 !important}
+    .top-nav .navbar-nav .nav-item .dropdown button{color:#FFF !important}
+    .top-nav .navbar-nav .nav-item .dropdown button:hover{color:#CA7072 !important}
+    .members-area {background-color:#6E0007}
+    /* Menu */
+    #slide-navbar-collapse {
+        background-color:#FFF}
+    }
+    
+    @media (max-width:992px) {
+    #slide-navbar-collapse a {color:#FFF !important;}
+    }
+    
+    @media (max-width:566px) {
+        button.btn.btn-primary {margin:auto !important}  
+    }
+    
+    
+    
+    
+    /* Product Page */
+    @media (min-width:992px) {
+    .zoomWindowContainer .zoomWindow {height:360px !important}
+    .zoomContainer{height:360px !important;z-index:8}
+    .slick-slideshow__slide.product-image {border:1px solid #CCC}
+    
+        
+    }
+    
+    @media (max-width:992px) {
+    .zoomContainer{height:242.234px !important;}
+    .zoomWindow {height:242.234px !important}
+    .product-details-slider .slick-control.next {left:5px !important}
+    .slick-slideshow__slide.product-image {border:1px solid #CCC}
+    }
+    
+    
+    
+                                    /*New Edit*/
+                                    
+    /*Delete Dark Mode on Banner */
+    
+    .home-slider-item:after {
+        display:none;
+    }
+    
+    /*Edit H2 Color and BG*/
+    
+    .section-title h2 a,
+    .section-title h2 {
+        background-color: #6E0007;
+        color: #FFF !important;
+        padding: 5px 20px;
+        display:inline-block;
+    }
+    
+    
+    /* Edit Add more Buttun*/
+    
+    .loadmore a {
+        border-radius:30px;
+        border:1px solid #CCC;
+    }
+    
+    /* Edit On Banner */
+    
+    .home-slider-item {
+        background-size: 100% 100%;
+    }
+    
+    
+    /*Edit New*/
+    html[lang="en"] footer {
+        font-size:18px !important;
+    }
+    
+    section.shop_section.layout_padding {
+        margin-top:30px;
+    }
+    
+    footer .row .col-lg-2.col-md-6.col-sm-6:nth-of-type(3){
+        display:none;
+    }
+    
+    footer .row .col-lg-2 {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    #navbar_top .navbar .dropdown-toggle, .navbar .dropdown-menu a {
+        display:block;
+        width:100%;
+    }
+    
+    a.navbar-brand.hide-mobile{ 
+        padding:0;
+    }
+    .navbar-brand img {
+        width:100%;
+        height:100%;
+        object-fit: contain;
+    }
+    
+    .zoomContainer {
+        display:none;
+    }
+    /* BY Mahmoud Adel Galal ... https://www.facebook.com/mahmoud.adelgalal */
+    .copyrights p, .copyrights span {font-weight:bold;font-size:20px;color:#111}
